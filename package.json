@@ -1,0 +1,29 @@
+{
+  "name": "store-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "keys.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha 'tests/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartmurry/store-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stuartmurry/store-front/issues"
+  },
+  "homepage": "https://github.com/stuartmurry/store-front#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
+  },
+  "devDependencies": {}
+}
