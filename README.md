@@ -76,12 +76,17 @@ As time goes by, multiple developers will need to make changes to the same table
 
 ```
 
-##4 Generate Seed Data
+## 4 - Generate Seed Data
 
 Seed data is initial data that is inserted into the database
 
 ```
-../node_modules/.bin/sequelize seed:generate --name demo-user
+../node_modules/.bin/sequelize seed:generate --name bamazon-mock-products
+```
+
+To commit seed data to Database
+```
+../node_modules/.bin/sequelize db:seed:all
 ```
 
 
