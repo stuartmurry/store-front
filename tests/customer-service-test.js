@@ -1,3 +1,8 @@
+// require("dotenv").config();
+// var keys = require("../keys.js");
+
+
+process.env.NODE_ENV = "test";
 // For assert operation, please refer to this link:
 // https://www.w3schools.com/nodejs/ref_assert.asp
 var assert = require("assert");
@@ -5,9 +10,9 @@ var customerService = require("../services/CustomerService");
 
 describe("Customer View", function() {
   // Need to connect before executing queries
-  before(function() {
-    customerService.Connect();
-  });
+  // before(function() {
+  //   customerService.Connect();
+  // });
 
   after(function() {
     customerService.Disconnect();

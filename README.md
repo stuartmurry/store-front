@@ -13,8 +13,8 @@ Add the following line:
 ```
 CLEARDB_DATABASE_URL=mysql://root@localhost:3306/bamazon?reconnect=true
 
-#Enable Drop and recreate tables when unit tests are run 
-NODE_ENV=test;
+#Enable Drop and recreate tables when unit tests are run (this will override to `test` when unit test are executing)
+NODE_ENV=development;
 ```
 
 Save the file.
@@ -74,6 +74,14 @@ As time goes by, multiple developers will need to make changes to the same table
 ```
 ../node_modules/.bin/sequelize migration:create --name products
 
+```
+
+##4 Generate Seed Data
+
+Seed data is initial data that is inserted into the database
+
+```
+../node_modules/.bin/sequelize seed:generate --name demo-user
 ```
 
 

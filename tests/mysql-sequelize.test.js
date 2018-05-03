@@ -1,3 +1,4 @@
+process.env.NODE_ENV = "test";
 // For assert operation, please refer to this link:
 // https://www.w3schools.com/nodejs/ref_assert.asp
 var assert = require("assert");
