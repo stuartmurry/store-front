@@ -1,13 +1,13 @@
 {
-  "name": "store-front",
-  "version": "1.0.0",
-  "description": "",
-  "main": "keys.js",
+  "name": "express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha 'tests/*.js'"
+  },
   "directories": {
     "test": "tests"
-  },
-  "scripts": {
-    "test": "mocha 'tests/*.js'"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,17 @@
   },
   "homepage": "https://github.com/stuartmurry/store-front#readme",
   "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
     "dotenv": "^5.0.1",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
 }

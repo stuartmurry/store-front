@@ -60,16 +60,11 @@ function ListProducts() {
   return this.sequelize.sync().then(() => this.Product.findAll());
 }
 
-function CreateProduct(product, isForceCreate) {
-  if (isForceCreate) {
-    return this.sequelize.sync({ force: true }).then(() => {
-      return this.Product.create(product);
-    });
-  } else {
-    return this.sequelize.sync().then(() => {
-      return this.Product.create(product);
-    });
-  }
+function CreateProduct(product) {
+  const isDropRecreate = keys.environment.NODE_ENV == 'test'
+  return this.sequelize.sync({ force: isDropRecreate }).then(() => {
+    return this.Product.create(product);
+  });
 }
 
 function DeleteProduct(product) {

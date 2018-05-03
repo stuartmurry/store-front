@@ -1,7 +1,7 @@
 // For assert operation, please refer to this link:
 // https://www.w3schools.com/nodejs/ref_assert.asp
 var assert = require("assert");
-var customerService = require("../lib/CustomerService");
+var customerService = require("../services/CustomerService");
 
 describe("Customer View", function() {
   // Need to connect before executing queries
