@@ -10,7 +10,12 @@ inside root project folder.  This file will not be checked in for security purpo
 
 Add the following line:
 
-`CLEARDB_DATABASE_URL=mysql://root@localhost:3306/bamazon?reconnect=true`
+```
+CLEARDB_DATABASE_URL=mysql://root@localhost:3306/bamazon?reconnect=true
+
+#Enable Drop and recreate tables when unit tests are run 
+NODE_ENV=test;
+```
 
 Save the file.
 
