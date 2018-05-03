@@ -71,5 +71,17 @@ function DeleteProduct(product) {
   return this.sequelize.sync().then(() => this.Product.destroy({ where : product }));
 }
 
+// update product
+// Project.find({ where: { title: 'aProject' } })
+//   .on('success', function (project) {
+//     // Check if record exists in db
+//     if (project) {
+//       project.updateAttributes({
+//         title: 'a very different title now'
+//       })
+//       .success(function () {})
+//     }
+//   })
+
 
 
