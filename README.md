@@ -37,7 +37,7 @@ Thats it!  That concludes the project.  Use this project as an example ORM for o
 
 # Sequelize ORM
 
-Sequelize is used to make Mysql wrapping data simplier.  These tools simplify reading, writing, updating and deleting data from database.  the Sequelize-cli provides a tool to simplify writing boiler plate code used in Sequelize operation esecailly for `migrations`.  Whenever its needed to add a field to a table, one should use this cli than to edit Mysql directly.  That way, when someone checks in this code, the other developers Mysql instances are automatically synched when the test runs. Instead of trying to memorize sequelize, its easier to execute a few command via Command-Line. Here are some reminder steps in order for command line syntax:
+Sequelize is used to simplify Mysql wrapping.  These tools simplify reading, writing, updating and deleting data from database.  The Sequelize-cli provides a tool to simplify writing boiler plate code used in Sequelize operation esecailly for `migrations`.  Whenever its needed to add a field to a table, one should use this cli than to edit Mysql directly.  That way, when someone checks in this code, the other developers Mysql instances are automatically synched when the test runs. Instead of trying to memorize sequelize, its easier to execute a few command via Command-Line. Here are some reminder steps in order for command line syntax:
 
 Before doing any CLI, please refer to this link for further instructions:
 
@@ -67,7 +67,7 @@ undo
 ../node_modules/.bin/sequelize db:migrate:undo
 ```
 
-## 1 - Create a New Migration from existing model
+## 3 - Create a New Migration from existing model
 
 As time goes by, multiple developers will need to make changes to the same table.  A migration is a developer's database snapshot to make the current release function correctly.
 
